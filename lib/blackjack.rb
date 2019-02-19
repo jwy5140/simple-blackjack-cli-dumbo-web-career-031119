@@ -58,5 +58,6 @@ def runner
   while tot < 21 do
     tot = hit?(tot)
   end
+end_game(tot)
 end
     
