@@ -6,16 +6,16 @@ def deal_card
   rand(1..11)
 end
 
-def display_card_total
-  # code #display_card_total here
+def display_card_total(tot)
+  puts "Your cards add up to #{tot}"
 end
 
 def prompt_user
-  # code #prompt_user here
+  puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
-  # code #get_user_input here
+  ans = gets.chomp
 end
 
 def end_game
