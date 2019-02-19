@@ -57,6 +57,7 @@ def runner
   tot = initial_round
   while tot < 21 do
     tot = hit?(tot)
+    display_card_total(tot)
   end
 end_game(tot)
 end
