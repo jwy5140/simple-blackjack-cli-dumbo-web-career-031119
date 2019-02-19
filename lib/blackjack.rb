@@ -1,5 +1,5 @@
 def welcome
-  puts "Welcome to the Blackjack Table."
+  puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
@@ -31,14 +31,14 @@ end
 
 def hit?(tot)
   prompt_user
-  get_user_input
-  if get_user_input == "h"
+  ans = get_user_input
+  if ans == "h"
     tot += deal_card
-  elsif get_user_input != "s"
-    while get_user_input != "h" || get_user_input != "s" do
+  elsif ans != "s"
+    while ans != "h" || ans != "s" do
       invalid_command
       prompt_user
-      get_user_input
+      ans = get_user_input
     end
   end
   tot
