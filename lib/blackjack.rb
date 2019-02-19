@@ -34,7 +34,7 @@ def hit?(tot)
   get_user_input
   if get_user_input == "h"
     tot += deal_card
-  else if get_user_input != "s"
+  elsif get_user_input != "s"
     while get_user_input != "h" || get_user_input != "s" do
       invalid_command
       prompt_user
